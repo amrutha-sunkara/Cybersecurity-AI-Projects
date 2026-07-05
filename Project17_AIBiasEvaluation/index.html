@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Bias Evaluation Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <h1>
+            <i class="fa-solid fa-robot"></i>
+            AI Bias Evaluation Generator
+        </h1>
+
+        <p>
+            Analyze AI-generated content for fairness,
+            inclusiveness and ethical concerns.
+        </p>
+
+    </div>
+
+    <div class="glass-card">
+
+        <div class="input-group">
+
+            <label>
+                <i class="fa-solid fa-file-lines"></i>
+                AI Generated Content
+            </label>
+
+            <textarea
+                id="aiText"
+                placeholder="Paste AI-generated content here...">
+            </textarea>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>
+                <i class="fa-solid fa-filter"></i>
+                Select Bias Type
+            </label>
+
+            <select id="biasType">
+                <option value="gender">
+                    Gender Bias
+                </option>
+
+                <option value="racial">
+                    Racial Bias
+                </option>
+
+                <option value="cultural">
+                    Cultural Bias
+                </option>
+
+                <option value="economic">
+                    Socioeconomic Bias
+                </option>
+
+                <option value="all">
+                    Evaluate All
+                </option>
+            </select>
+
+        </div>
+
+        <button onclick="evaluateBias()">
+
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+            Analyze Bias
+
+        </button>
+
+    </div>
+
+    <div id="result" class="result-card"></div>
+
+    <div class="footer">
+        Cybersecurity & Responsible AI Project
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

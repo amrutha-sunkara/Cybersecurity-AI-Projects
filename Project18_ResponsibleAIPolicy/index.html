@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Responsible AI Policy Draft Generator
+</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href=
+"https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <h1>
+            <i class="fa-solid fa-scale-balanced"></i>
+            Responsible AI Policy Generator
+        </h1>
+
+        <p>
+            Generate governance policies for
+            ethical and responsible AI usage.
+        </p>
+
+    </div>
+
+    <div class="policy-card">
+
+        <div class="input-group">
+
+            <label>
+                <i class="fa-solid fa-building"></i>
+                Organization Name
+            </label>
+
+            <input
+            type="text"
+            id="orgName"
+            placeholder=
+            "Enter organization name">
+
+        </div>
+
+        <div class="input-group">
+
+            <label>
+                <i class="fa-solid fa-briefcase"></i>
+                Organization Type
+            </label>
+
+            <select id="orgType">
+
+                <option>
+                    Educational Institution
+                </option>
+
+                <option>
+                    Software Company
+                </option>
+
+                <option>
+                    Healthcare Organization
+                </option>
+
+                <option>
+                    Government Agency
+                </option>
+
+                <option>
+                    Financial Institution
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>
+                <i class="fa-solid fa-list-check"></i>
+                Policy Scope
+            </label>
+
+            <textarea
+            id="scope"
+            placeholder=
+            "Describe where AI will be used">
+            </textarea>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>
+                <i class="fa-solid fa-shield-halved"></i>
+                Primary Concern
+            </label>
+
+            <select id="concern">
+
+                <option>
+                    Privacy
+                </option>
+
+                <option>
+                    Bias and Fairness
+                </option>
+
+                <option>
+                    Transparency
+                </option>
+
+                <option>
+                    Security
+                </option>
+
+                <option>
+                    All
+                </option>
+
+            </select>
+
+        </div>
+
+        <button
+        onclick="generatePolicy()">
+
+            <i class=
+            "fa-solid fa-file-contract"></i>
+
+            Generate Policy
+
+        </button>
+
+    </div>
+
+    <div
+    id="result"
+    class="result-card">
+    </div>
+
+    <div class="footer">
+        Cybersecurity &
+        Responsible AI Project
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
