@@ -22,19 +22,20 @@ body{
 
 .header{
     text-align:center;
-    padding:50px 20px 30px;
+    padding:60px 20px 40px;
 }
 
 .header h1{
     font-size:42px;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 .header p{
     font-size:18px;
     color:#cbd5e1;
-    max-width:800px;
+    max-width:900px;
     margin:auto;
+    line-height:1.8;
 }
 
 .container{
@@ -52,7 +53,7 @@ body{
     border-radius:20px;
     padding:30px;
     box-shadow:0 15px 35px rgba(0,0,0,0.3);
-    transition:all .3s ease;
+    transition:0.3s;
 }
 
 .card:hover{
@@ -62,12 +63,12 @@ body{
 .card-number{
     width:60px;
     height:60px;
-    border-radius:50%;
     background:#2563eb;
     color:white;
+    border-radius:50%;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
     font-size:24px;
     font-weight:bold;
     margin-bottom:20px;
@@ -80,51 +81,79 @@ body{
 
 .card p{
     color:#64748b;
-    line-height:1.6;
-    margin-bottom:25px;
+    line-height:1.7;
+    margin-bottom:20px;
 }
 
 .btn{
-    display:inline-block;
     background:#2563eb;
     color:white;
     padding:12px 22px;
     border-radius:10px;
     text-decoration:none;
     font-weight:600;
-    transition:.3s;
+    display:inline-block;
 }
 
 .btn:hover{
     background:#1d4ed8;
 }
 
-.about{
+.section{
     width:90%;
     max-width:1200px;
     margin:40px auto;
     background:rgba(255,255,255,0.08);
-    padding:30px;
+    padding:35px;
     border-radius:20px;
     backdrop-filter:blur(10px);
 }
 
-.about h2{
-    margin-bottom:15px;
+.section h2{
+    margin-bottom:20px;
+    color:#ffffff;
 }
 
-.about p{
-    color:#e2e8f0;
+.section h3{
+    margin-top:20px;
+    margin-bottom:10px;
+    color:#93c5fd;
+}
+
+.section p{
     line-height:1.8;
+    color:#e2e8f0;
+}
+
+.section ul{
+    margin-left:20px;
+    margin-top:10px;
+}
+
+.section li{
+    margin-bottom:10px;
+    color:#e2e8f0;
+}
+
+.tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.tech span{
+    background:#2563eb;
+    padding:10px 20px;
+    border-radius:25px;
+    font-weight:600;
 }
 
 footer{
     text-align:center;
     padding:30px;
     color:#94a3b8;
-    margin-top:30px;
 }
-
 </style>
 </head>
 
@@ -132,10 +161,12 @@ footer{
 
 <div class="header">
     <h1>Cybersecurity & Responsible AI Projects</h1>
+
     <p>
-        A collection of web-based projects focused on cybersecurity,
-        digital privacy, AI ethics, fairness evaluation, and
-        responsible AI governance.
+        A collection of interactive web applications developed
+        under the Cybersecurity & Responsible AI module,
+        focusing on digital privacy, cybersecurity awareness,
+        AI fairness evaluation, and responsible AI governance.
     </p>
 </div>
 
@@ -145,8 +176,8 @@ footer{
         <div class="card-number">15</div>
         <h2>Digital Footprint Mapping Generator</h2>
         <p>
-            Analyze personal data exposure across digital platforms,
-            identify privacy risks, and receive security recommendations.
+            Analyze personal data exposure across digital
+            platforms and generate privacy risk assessments.
         </p>
         <a class="btn" href="Project15_DigitalFootprint/index.html">
             Launch Project
@@ -157,8 +188,8 @@ footer{
         <div class="card-number">16</div>
         <h2>Phishing Awareness Generator</h2>
         <p>
-            Generate cybersecurity awareness posters and educational
-            video scripts for phishing attack scenarios.
+            Generate cybersecurity awareness posters
+            and educational video scripts.
         </p>
         <a class="btn" href="Project16_PhishingAwareness/index.html">
             Launch Project
@@ -169,8 +200,8 @@ footer{
         <div class="card-number">17</div>
         <h2>AI Bias Evaluation Generator</h2>
         <p>
-            Evaluate AI-generated content for fairness, identify bias,
-            and generate corrective recommendations.
+            Evaluate AI-generated content for fairness,
+            bias detection, and corrective recommendations.
         </p>
         <a class="btn" href="Project17_AIBiasEvaluation/index.html">
             Launch Project
@@ -181,8 +212,8 @@ footer{
         <div class="card-number">18</div>
         <h2>Responsible AI Policy Generator</h2>
         <p>
-            Generate organization-specific Responsible AI policies
-            with governance, ethics, privacy, and compliance guidelines.
+            Generate organization-specific responsible AI
+            governance policies and guidelines.
         </p>
         <a class="btn" href="Project18_ResponsibleAIPolicy/index.html">
             Launch Project
@@ -191,20 +222,77 @@ footer{
 
 </div>
 
-<div class="about">
+<div class="section">
+
     <h2>About This Repository</h2>
+
     <p>
-        This project repository contains four interactive applications
-        developed under the Cybersecurity & Responsible AI module.
-        The projects focus on digital privacy, phishing awareness,
-        AI bias evaluation, and responsible AI governance.
-        The applications were developed using HTML, CSS, and JavaScript
-        and deployed using GitHub Pages.
+        This repository contains four web-based projects
+        developed as part of the Cybersecurity &
+        Responsible AI module. The projects focus on
+        digital privacy, cybersecurity awareness,
+        AI ethics, fairness evaluation, and
+        responsible AI governance.
     </p>
+
+    <h3>Project 15 – Digital Footprint Mapping Generator</h3>
+    <p>
+        Helps users understand their online data exposure,
+        assess privacy risks, and obtain security recommendations.
+    </p>
+
+    <h3>Project 16 – Phishing Awareness Generator</h3>
+    <p>
+        Creates awareness posters and educational video
+        scripts based on phishing attack scenarios.
+    </p>
+
+    <h3>Project 17 – AI Bias Evaluation Generator</h3>
+    <p>
+        Examines AI-generated content for bias,
+        fairness concerns, and provides corrective suggestions.
+    </p>
+
+    <h3>Project 18 – Responsible AI Policy Generator</h3>
+    <p>
+        Generates responsible AI governance policies
+        tailored to organizational requirements.
+    </p>
+
+</div>
+
+<div class="section">
+
+    <h2>Key Features</h2>
+
+    <ul>
+        <li>Interactive user interfaces</li>
+        <li>Cybersecurity risk assessment</li>
+        <li>AI ethics and fairness analysis</li>
+        <li>Responsible AI governance framework generation</li>
+        <li>Privacy and security recommendations</li>
+        <li>Professional report generation</li>
+    </ul>
+
+</div>
+
+<div class="section">
+
+    <h2>Technologies Used</h2>
+
+    <div class="tech">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>GitHub</span>
+        <span>GitHub Pages</span>
+    </div>
+
 </div>
 
 <footer>
-    Developed by <strong>Amrutha Sunkara</strong> | Cybersecurity & Responsible AI Projects
+    Developed by <strong>Amrutha Sunkara</strong><br>
+    Cybersecurity & Responsible AI Projects
 </footer>
 
 </body>
