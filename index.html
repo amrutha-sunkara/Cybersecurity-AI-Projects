@@ -1,111 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cybersecurity & Responsible AI Projects</title>
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body{
-            background:linear-gradient(135deg,#0f172a,#1e293b);
-            min-height:100vh;
-            padding:50px;
-        }
+<title>Cybersecurity & Responsible AI Projects</title>
 
-        h1{
-            text-align:center;
-            color:white;
-            margin-bottom:40px;
-            font-size:40px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
 
-        .container{
-            max-width:1200px;
-            margin:auto;
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-            gap:30px;
-        }
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    min-height:100vh;
+    color:white;
+}
 
-        .card{
-            background:white;
-            padding:30px;
-            border-radius:15px;
-            box-shadow:0 10px 20px rgba(0,0,0,.2);
-            transition:.3s;
-        }
+.header{
+    text-align:center;
+    padding:50px 20px 30px;
+}
 
-        .card:hover{
-            transform:translateY(-10px);
-        }
+.header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
 
-        h2{
-            color:#2563eb;
-            margin-bottom:15px;
-        }
+.header p{
+    font-size:18px;
+    color:#cbd5e1;
+    max-width:800px;
+    margin:auto;
+}
 
-        p{
-            color:#555;
-            margin-bottom:20px;
-        }
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
 
-        a{
-            display:inline-block;
-            background:#2563eb;
-            color:white;
-            padding:12px 20px;
-            border-radius:8px;
-            text-decoration:none;
-        }
+.card{
+    background:white;
+    color:#1e293b;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.3);
+    transition:all .3s ease;
+}
 
-        a:hover{
-            background:#1d4ed8;
-        }
-    </style>
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card-number{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.card p{
+    color:#64748b;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:12px 22px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.about{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+}
+
+.about h2{
+    margin-bottom:15px;
+}
+
+.about p{
+    color:#e2e8f0;
+    line-height:1.8;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+    margin-top:30px;
+}
+
+</style>
 </head>
+
 <body>
 
-<h1>Cybersecurity & Responsible AI Projects</h1>
+<div class="header">
+    <h1>Cybersecurity & Responsible AI Projects</h1>
+    <p>
+        A collection of web-based projects focused on cybersecurity,
+        digital privacy, AI ethics, fairness evaluation, and
+        responsible AI governance.
+    </p>
+</div>
 
 <div class="container">
 
     <div class="card">
-        <h2>Project 15</h2>
-        <p>Digital Footprint Mapping Generator</p>
-        <a href="Project15_DigitalFootprint/index.html">
-            Open Project
+        <div class="card-number">15</div>
+        <h2>Digital Footprint Mapping Generator</h2>
+        <p>
+            Analyze personal data exposure across digital platforms,
+            identify privacy risks, and receive security recommendations.
+        </p>
+        <a class="btn" href="Project15_DigitalFootprint/index.html">
+            Launch Project
         </a>
     </div>
 
     <div class="card">
-        <h2>Project 16</h2>
-        <p>Phishing Awareness Generator</p>
-        <a href="Project16_PhishingAwareness/index.html">
-            Open Project
+        <div class="card-number">16</div>
+        <h2>Phishing Awareness Generator</h2>
+        <p>
+            Generate cybersecurity awareness posters and educational
+            video scripts for phishing attack scenarios.
+        </p>
+        <a class="btn" href="Project16_PhishingAwareness/index.html">
+            Launch Project
         </a>
     </div>
 
     <div class="card">
-        <h2>Project 17</h2>
-        <p>AI Bias Evaluation Generator</p>
-        <a href="Project17_AIBiasEvaluation/index.html">
-            Open Project
+        <div class="card-number">17</div>
+        <h2>AI Bias Evaluation Generator</h2>
+        <p>
+            Evaluate AI-generated content for fairness, identify bias,
+            and generate corrective recommendations.
+        </p>
+        <a class="btn" href="Project17_AIBiasEvaluation/index.html">
+            Launch Project
         </a>
     </div>
 
     <div class="card">
-        <h2>Project 18</h2>
-        <p>Responsible AI Policy Generator</p>
-        <a href="Project18_ResponsibleAIPolicy/index.html">
-            Open Project
+        <div class="card-number">18</div>
+        <h2>Responsible AI Policy Generator</h2>
+        <p>
+            Generate organization-specific Responsible AI policies
+            with governance, ethics, privacy, and compliance guidelines.
+        </p>
+        <a class="btn" href="Project18_ResponsibleAIPolicy/index.html">
+            Launch Project
         </a>
     </div>
 
 </div>
+
+<div class="about">
+    <h2>About This Repository</h2>
+    <p>
+        This project repository contains four interactive applications
+        developed under the Cybersecurity & Responsible AI module.
+        The projects focus on digital privacy, phishing awareness,
+        AI bias evaluation, and responsible AI governance.
+        The applications were developed using HTML, CSS, and JavaScript
+        and deployed using GitHub Pages.
+    </p>
+</div>
+
+<footer>
+    Developed by <strong>Amrutha Sunkara</strong> | Cybersecurity & Responsible AI Projects
+</footer>
 
 </body>
 </html>
